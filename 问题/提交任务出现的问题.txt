@@ -1,0 +1,9 @@
+Cannot receive any reply in 120 seconds. 
+This timeout is controlled by spark.rpc.askTimeout
+
+解决方案：集群会和提交任务的机器通信，将提交任务的机器的防火墙关闭或者设置防火墙，
+使之放行程序。
+
+local class incompatible
+解决方案：发现idea上maven的spark_core版本与集群上运行spark-shell的spark版本不一样，
+修改maven的spark-core版本。
